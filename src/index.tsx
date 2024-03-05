@@ -31,10 +31,7 @@ app.post(
       return c.json({ message: "Invalid data", errors: parsed.error.errors });
     }
     return c.json({ message: "Valid data", data: parsed.data });
-  }),
-  (c) => {
-    return c.json({ message: "Hola Hono!" });
-  }
+  })
 );
 
 export default app;
